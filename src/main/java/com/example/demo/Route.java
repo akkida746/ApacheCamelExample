@@ -15,7 +15,6 @@ public class Route extends RouteBuilder {
         rest().get("/greeting")
                 .to("/greeting");
 
-
         from("/greeting")
                 .log("Getting Msg")
                 .bean(String.class,greeting());
